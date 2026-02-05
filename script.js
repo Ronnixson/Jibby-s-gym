@@ -59,7 +59,7 @@ document.getElementById("contactForm")
 
 e.preventDefault();
 
-emailjs.send("YOUR_SERVICE_ID","YOUR_TEMPLATE_ID",{
+emailjs.send("GMAIL","XT.ITPATH@GMAIL.COM",{
 name: name.value,
 email: email.value,
 message: message.value
