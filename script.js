@@ -21,7 +21,7 @@ window.addEventListener("load", reveal);
 // WHATSAPP BUTTON (UGANDA NUMBER)
 document.getElementById("whatsappBtn").onclick = () => {
 
-const phone = "2567XXXXXXXX";   // ← PUT YOUR NUMBER HERE
+const phone = "256741503271";   
 
 const text =
 `Hello Jibby's Gym!
