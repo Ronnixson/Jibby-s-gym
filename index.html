@@ -1,99 +1,138 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IRON ADDICTS GYM | Official Site</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jibby's Gym – Kisaasi, Kampala</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+
+<!-- EMAILJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("YOUR_EMAILJS_PUBLIC_KEY");
+  })();
+</script>
 </head>
+
 <body>
 
-    <nav class="navbar">
-        <div class="logo">IRON <span>ADDICTS</span></div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Philosophy</a></li>
-            <li><a href="#membership">Memberships</a></li>
-            <li><a href="#contact">Location</a></li>
-        </ul>
-        <a href="#membership" class="cta-btn-nav">Join Now</a>
-    </nav>
+<header class="header">
+<div class="container nav-wrapper">
+<div class="logo">JIBBY'S GYM</div>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>IT'S STILL YO <br><span class="highlight">SET!</span></h1>
-            <p>Welcome to the world-famous Iron Addicts Gym. No excuses. No shortcuts. Just results.</p>
-            <div class="hero-btns">
-                <a href="#membership" class="btn-primary">View Plans</a>
-                <a href="#about" class="btn-secondary">Our Story</a>
-            </div>
-        </div>
-    </section>
+<nav id="nav-menu">
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#pricing">Pricing</a>
+<a href="#bmi">BMI</a>
+<a href="#contact">Contact</a>
+</nav>
 
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-text">
-                    <h2>THE PHILOSOPHY</h2>
-                    <p>Founded by 6X World Champion C.T. Fletcher, Iron Addicts is not a "corporate" gym. We are a community of underdogs and mutants dedicated to crushing personal goals.</p>
-                    <ul class="features">
-                        <li>✓ 24/7 Member Access</li>
-                        <li>✓ World-Class Strength Equipment</li>
-                        <li>✓ Professional Bodybuilding Coaching</li>
-                    </ul>
-                </div>
-                <div class="about-image">
-                    <div class="image-placeholder"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="hamburger" id="hamburger">☰</div>
+</div>
+</header>
 
-    <section id="membership" class="pricing">
-        <h2 class="section-title">CHOOSE YOUR PATH</h2>
-        <div class="price-grid">
-            <div class="price-card">
-                <h3>Day Pass</h3>
-                <div class="price">$25</div>
-                <p>Perfect for visitors passing through Signal Hill.</p>
-                <button class="card-btn">Get Pass</button>
-            </div>
-            <div class="price-card featured">
-                <h3>Monthly</h3>
-                <div class="price">$79</div>
-                <p>Full access to all equipment and community events.</p>
-                <button class="card-btn">Join The Tribe</button>
-            </div>
-            <div class="price-card">
-                <h3>Weekly</h3>
-                <div class="price">$75</div>
-                <p>7 days of pure, unadulterated iron therapy.</p>
-                <button class="card-btn">Get Started</button>
-            </div>
-        </div>
-    </section>
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="hero-overlay">
+<h1>Unleash Your Potential at Jibby's Gym</h1>
+<p>Kisaasi, Kampala – Your Home of Strength & Fitness</p>
 
-    <footer id="contact">
-        <div class="footer-content">
-            <div class="footer-info">
-                <h3>LOCATION</h3>
-                <p>2224A Cerritos Ave, Signal Hill, CA 90755</p>
-                <p>Phone: (562) 743-2472</p>
-                <p>Hours: Every Damn Day 5AM - 10PM</p>
-            </div>
-            <div class="footer-social">
-                <h3>FOLLOW THE MOVEMENT</h3>
-                <div class="social-icons">
-                    <span>IG</span> <span>FB</span> <span>YT</span>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2024 Iron Addicts Gym. Built for the Obsessed.
-        </div>
-    </footer>
+<a class="btn" id="whatsappBtn">Join via WhatsApp</a>
+</div>
+</section>
 
-    <script src="script.js"></script>
+<!-- SERVICES -->
+<section id="services" class="services reveal">
+<div class="container">
+<h2>Our Services</h2>
+
+<div class="card-grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b">
+<h3>Weight Training</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74">
+<h3>Cardio</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
+<h3>Aerobics</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+<h3>Personal Training</h3>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="pricing reveal">
+<div class="container">
+<h2>Membership Plans</h2>
+
+<div class="price-grid">
+<div class="price-card">
+<h3>Daily</h3>
+<p class="amount">UGX 10,000</p>
+</div>
+
+<div class="price-card popular">
+<h3>Monthly</h3>
+<p class="amount">UGX 120,000</p>
+</div>
+
+<div class="price-card">
+<h3>Annual</h3>
+<p class="amount">UGX 1,200,000</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BMI CALCULATOR -->
+<section id="bmi" class="bmi reveal">
+<div class="container">
+<h2>BMI Calculator</h2>
+
+<div class="bmi-box">
+<input id="weight" placeholder="Weight (kg)" type="number" />
+<input id="height" placeholder="Height (cm)" type="number" />
+
+<button class="btn" onclick="calculateBMI()">Calculate BMI</button>
+
+<p id="bmiResult"></p>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<footer id="contact" class="contact reveal">
+<div class="container">
+<h2>Contact Us</h2>
+
+<form class="contact-form" id="contactForm">
+<input id="name" placeholder="Your Name" required />
+<input id="email" placeholder="Your Email" required />
+<textarea id="message" placeholder="Message" required></textarea>
+
+<button class="btn" type="submit">Send Message</button>
+</form>
+
+<p id="status"></p>
+
+<p>📍 Kisaasi, Kampala | 🕒 6:00 AM – 10:00 PM</p>
+</div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
