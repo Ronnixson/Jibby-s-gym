@@ -28,7 +28,7 @@ nav a:hover,nav a:focus{color:var(--accent);outline:none}
 .hamburger{display:none;background:none;border:0;color:var(--white);font-size:24px}
 
 /* Hero */
-.hero{background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.45)), url('media/jib5.jfif') center/cover no-repeat;height:78vh;display:flex;align-items:center}
+.hero{background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.45)), url('media/jib1.jpeg') center/cover no-repeat;height:78vh;display:flex;align-items:center}
 .hero-overlay{padding:48px;text-align:center;width:100%}
 .hero h1{font-size:2.6rem;margin-bottom:8px}
 .lead{color:var(--muted);margin-bottom:16px}
