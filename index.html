@@ -1,77 +1,104 @@
  <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Jibby's Gym – Kisaasi, Kampala</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jibby's Gym – Kisaasi, Kampala</title>
+  <meta name="description" content="Jibby's Gym — Strength training, cardio, personal coaching in Kisaasi, Kampala. Join group classes or get one-on-one coaching.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css" />
-
-<!-- EMAILJS -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script>
-  (function(){
-    emailjs.init("YOUR_EMAILJS_PUBLIC_KEY");
-  })();
-</script>
+  <!-- EMAILJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("YOUR_EMAILJS_PUBLIC_KEY");
+    })();
+  </script>
 </head>
 
 <body>
 
 <header class="header">
-<div class="container nav-wrapper">
-<div class="logo">JIBBY'S GYM</div>
+  <div class="container nav-wrapper">
+    <div class="logo" aria-label="Jibby's Gym">JIBBY'S GYM</div>
 
-<nav id="nav-menu">
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#pricing">Pricing</a>
-<a href="#bmi">BMI</a>
-<a href="#contact">Contact</a>
-</nav>
+    <nav id="nav-menu" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#bmi">BMI</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-<div class="hamburger" id="hamburger">☰</div>
-</div>
+    <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="nav-menu">☰</button>
+  </div>
 </header>
 
 <!-- HERO -->
-<section class="hero" id="home">
-<div class="hero-overlay">
-<h1>Unleash Your Potential at Jibby's Gym</h1>
-<p>Kisaasi, Kampala – Your Home of Strength & Fitness</p>
+<main>
+  <section class="hero" id="home" role="region" aria-label="Hero">
+    <div class="hero-overlay">
+      <h1>Unleash Your Potential</h1>
+      <p class="lead">Strength • Conditioning • Personal Coaching — Kisaasi, Kampala</p>
 
-<a class="btn" id="whatsappBtn">Join via WhatsApp</a>
-</div>
-</section>
+      <div class="hero-ctas">
+        <a class="btn" id="whatsappBtn">Join via WhatsApp</a>
+        <a class="btn ghost" href="#pricing">Membership Plans</a>
+      </div>
+    </div>
+  </section>
 
 <!-- SERVICES -->
 <section id="services" class="services reveal">
-<div class="container">
-<h2>Our Services</h2>
+  <div class="container">
+    <h2>Our Services</h2>
 
-<div class="card-grid">
-<div class="card">
-<img src="/media/jib3.jfif">
-<h3>Weight Training</h3>
-</div>
+    <div class="card-grid">
+      <div class="card">
+        <img src="media/jib3.jfif" alt="Weight training session">
+        <h3>Weight Training</h3>
+      </div>
 
-<div class="card">
-<img src="/media/jiib2.jfif">
-<h3>Cardio</h3>
-</div>
+      <div class="card">
+        <img src="media/jiib2.jfif" alt="Cardio area">
+        <h3>Cardio</h3>
+      </div>
 
-<div class="card">
-<img src="/media/jiib 6.jfif">
-<h3>Aerobics</h3>
-</div>
+      <div class="card">
+        <img src="media/jiib 6.jfif" alt="Aerobics class">
+        <h3>Aerobics</h3>
+      </div>
 
-<div class="card">
-<img src="/media/jib4.jfif">
-<h3>Personal Training</h3>
-</div>
-</div>
-</div>
+      <div class="card">
+        <img src="media/jib4.jfif" alt="Personal training">
+        <h3>Personal Training</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery reveal">
+  <div class="container">
+    <h2>Gallery</h2>
+    <div class="gallery-grid" aria-live="polite">
+      <button class="gallery-item" data-src="media/jib3.jfif"><img src="media/jib3.jfif" alt="Gym photo 1"></button>
+      <button class="gallery-item" data-src="media/jib4.jfif"><img src="media/jib4.jfif" alt="Gym photo 2"></button>
+      <button class="gallery-item" data-src="media/jib5.jfif"><img src="media/jib5.jfif" alt="Gym photo 3"></button>
+      <button class="gallery-item" data-src="media/jiib 6.jfif"><img src="media/jiib 6.jfif" alt="Gym photo 4"></button>
+      <button class="gallery-item" data-src="media/jiib2.jfif"><img src="media/jiib2.jfif" alt="Gym photo 5"></button>
+      <button class="gallery-item" data-src="media/jiib7.jfif"><img src="media/jiib7.jfif" alt="Gym photo 6"></button>
+      <button class="gallery-item" data-src="media/jiib9.jfif"><img src="media/jiib9.jfif" alt="Gym photo 7"></button>
+    </div>
+  </div>
+
+  <!-- Lightbox modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lightboxClose" class="lightbox-close" aria-label="Close image">×</button>
+    <img id="lightboxImg" src="" alt="">
+  </div>
 </section>
 
 <!-- PRICING -->
@@ -114,23 +141,41 @@
 </div>
 </section>
 
+</main>
+
 <!-- CONTACT -->
 <footer id="contact" class="contact reveal">
-<div class="container">
-<h2>Contact Us</h2>
+  <div class="container">
+    <h2>Contact Us</h2>
 
-<form class="contact-form" id="contactForm">
-<input id="name" placeholder="Your Name" required />
-<input id="email" placeholder="Your Email" required />
-<textarea id="message" placeholder="Message" required></textarea>
+    <form class="contact-form" id="contactForm">
+      <label class="visually-hidden" for="name">Your name</label>
+      <input id="name" placeholder="Your Name" required />
 
-<button class="btn" type="submit">Send Message</button>
-</form>
+      <label class="visually-hidden" for="email">Your email</label>
+      <input id="email" placeholder="Your Email" required />
 
-<p id="status"></p>
+      <label class="visually-hidden" for="message">Message</label>
+      <textarea id="message" placeholder="Message" required></textarea>
 
-<p>📍 Kisaasi, Kampala | 🕒 6:00 AM – 10:00 PM</p>
-</div>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+
+    <p id="status" aria-live="polite"></p>
+
+    <div class="contact-meta">
+      <p>📍 Kisaasi, Kampala</p>
+      <p>🕒 6:00 AM – 10:00 PM</p>
+    </div>
+
+    <div class="socials">
+      <a href="#" aria-label="WhatsApp" class="social">WhatsApp</a>
+      <a href="#" aria-label="Facebook" class="social">Facebook</a>
+      <a href="#" aria-label="Instagram" class="social">Instagram</a>
+    </div>
+
+    <p class="small">© <span id="year"></span> Jibby's Gym — All rights reserved.</p>
+  </div>
 </footer>
 
 <script src="script.js"></script>
