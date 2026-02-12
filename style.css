@@ -53,7 +53,7 @@ nav a {
 
 /* HERO */
 .hero {
-  background: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b') center/cover;
+  background: url('/media/jib1.jpeg') center/cover;
   height: 90vh;
   display: flex;
   align-items: center;
